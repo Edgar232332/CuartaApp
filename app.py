@@ -43,4 +43,5 @@ with tab3:
 
     if st.button("Predecir"):
         pred = modelo.predict(np.array([[alcohol, gender, campus]]))
-        st.write(pred[0])
+        predre = round(pred[0], 2)
+        st.write("Su promedio es de:", predre)
